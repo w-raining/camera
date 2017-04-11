@@ -48,29 +48,28 @@ class ImageCompression {
     public $offset_y=0;
 
     
-
-    //自动剪裁压缩
+//-- 快捷方法-----------------------------------
+    //自动剪裁缩放
     public static function AutoCut($config){
         $config["type"]="0";
         return new self($config);
     }
-    //自动压缩
+    //自动缩放
     public static function AutoReduce($config){
         $config["type"]="1";
         return new self($config);
     }
-    //手动压缩/拉伸/剪裁 图片
+    //手动缩放/拉伸/剪裁 图片
     public static function Manual($config){
         $config["type"]="2";
         return new self($config);
     }
-    //自动压缩 可以将小图放大
+    //自动缩放 可以将小图放大
     public static function SpAutoReduce($config){
         $config["type"]="3";
         return new self($config);
     }
-
-    
+//-----------------------------------------------    
 
     public function __construct($config=[]) {
         if (!function_exists('gd_info')) {

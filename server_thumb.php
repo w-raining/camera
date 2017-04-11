@@ -27,5 +27,5 @@ if(!empty($_POST)){
 	$result=CutPic::Cut($config);
 	$LocalPath=$result->ImageCompression->targetImg;
 	$path=ArrayHelper::getPath($LocalPath);
-	echo json_encode(["path"=>$path]);
+	echo json_encode(["status"=>"0","path"=>$path]);
 }

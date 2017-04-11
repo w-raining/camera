@@ -5,15 +5,18 @@
 	float: left;
 	background-color: #eee;
 }
-#thumb{
+
+.form-horizontal .control-label{padding-top: 5px;}
+.smpic{
 	margin-left: 10px;
-	width: 100px;
-	height: 100px;
 	position: relative;
 	overflow: hidden;
 	float: left;
 	background-color: #eee
-	/*border: 5px solid #6f4da2;*/
+ /*border: 5px solid #6f4da2;*/;
+}
+.image_dispaly{
+	display: none;
 }
 .mr10{
 	margin: 5px 5px 5px 0;
