@@ -16,7 +16,6 @@
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
 <div class="container-fluid">
 	<div class="row">
 		<div class="col-sm-12">
@@ -37,7 +36,6 @@
 	</div>
 </div>
 </body>
-
 <script src="../jquery/jquery-2.2.4.js"></script>
 <!--用于截图的Jcrop组件-->
 <script src="plugins/Jcrop-0.9.12/js/jquery.Jcrop.js"></script>
@@ -45,7 +43,6 @@
 <script src="plugins/bootstrap-3.3.7/js/bootstrap.js"></script>
 -->
 <script src="js/jquery.thumb.js"></script>
-
 <script type="text/javascript">
 $.Thumb.display({
 	main:"#thumb_main",//上传图预览
@@ -68,6 +65,5 @@ $.Thumb.display({
 });
 
 </script>
-
 </html>
 ```
