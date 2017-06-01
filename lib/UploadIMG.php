@@ -96,7 +96,7 @@ class UploadIMG{
     	}
     	//是否上传错误
 		if($this->file["error"]!=0){
-			throw new \Exception(self::uploadError[$this->file["error"]]);
+			throw new \Exception(self::uploadError()[$this->file["error"]]);
 		}
 		//上传大小是否超出
 		if($this->size*1024*1024 < $this->file["size"]){

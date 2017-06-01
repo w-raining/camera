@@ -154,24 +154,16 @@
                     return xhr;
                 },
                 success: function (data) {
-					//用于配置 data.path
-					if(outer.upload_success(outer,data)){
-						outer.$input.parent().append(outer.$upDataButtom);//显示确认按钮
-						outer.init();
-					}else{
-						alert("文件上传完成后处理失败");
-					}
-					/**
-                    if(data.status==="0"){
-                        //自动提交
-                        outer.$input.parent().append(outer.$upDataButtom);//显示确认按钮
-                        data.path="/uploads/public/original/"+data.name;
-                        // ["path":ArrayHelper::getPath($targetImg),"name":$res->getName()];
-                        outer.globalData = data;
-                        outer.init();
+					//console.log(data);
+                    if(data.status === "0"){
+                        //赋值状态
+						if(outer.upload_success(outer,data)){
+							outer.$input.parent().append(outer.$upDataButtom);//显示确认按钮
+							outer.init();
+						}
                     }else{
                         alert(data.error);
-                    }*/
+                    }
                 },
                 error: function () {
                     console.log("服务器错误");
